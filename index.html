@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/833/833472.png" type="image/png">
+</head>
+<body>
+    <div class="container" role="main" aria-label="Dictionary search area">
+        <div class="logo-title">
+            <h1>Word Dictionary</h1>
+        </div>
+        <form id="search-form" aria-label="Search for a word">
+            <input type="text" id="word-input" placeholder="Type a word..." autocomplete="off" required aria-label="Word to search" />
+            <button type="submit" aria-label="Search">Search</button>
+        </form>
+        <div id="result" class="result-area" aria-live="polite">
+            <div id="spinner" class="spinner" style="display:none;"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
